@@ -20,6 +20,8 @@ draw = function(){
   fill(255, 170, 0);
   ellipse(200, 100, sunRadius, sunRadius);
 
+  sunRadius = sunRadius + 2
+
   // clouds 
   fill(255, 255, 255);
 
@@ -28,10 +30,14 @@ draw = function(){
   ellipse(leftX+62, 150, 70, 60);
   ellipse(leftX-62, 150, 70, 60);
 
+  leftX = leftX * 99/100;
+
   // right cloud
   ellipse(rightX, 100, 126, 97);
   ellipse(rightX+62, 100, 70, 60);
   ellipse(rightX-62, 100, 70, 60);
+
+  rightX = rightX * 99/100;
   
 }
 
